@@ -1,0 +1,106 @@
+.photoCard {
+    width: 225px;
+    height: 275px;
+
+    border-radius: 30px;
+
+    background-color: burlywood;
+
+    margin: 0 15px 45px;
+
+    .detail {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(139, 69, 19, .60);
+        border-radius: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        span {
+            color: white;
+            font-size: 50px;
+            text-decoration: underline;
+            text-align: center;
+        }
+    }
+
+    &.photo {
+        background-position: center;
+        // background-position: 25% 42%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &.photo1 {
+        background-image: linear-gradient(45deg,
+                rgba(255, 218, 185, 0.5),
+                rgba(255, 218, 185, 0.5)),
+            url(/images/0W5A4604.jpg);
+    }
+
+    &.photo2 {
+        background-image: linear-gradient(45deg,
+                rgba(255, 218, 185, 0.5),
+                rgba(255, 218, 185, 0.5)),
+            url(/images/0W5A3925.jpg);
+    }
+
+    &.photo3 {
+        background-image: linear-gradient(45deg,
+                rgba(255, 218, 185, 0.5),
+                rgba(255, 218, 185, 0.5)),
+            url(/images/0W5A4467.jpg);
+    }
+
+    &.photo4 {
+        background-image: linear-gradient(45deg,
+                rgba(255, 218, 185, 0.5),
+                rgba(255, 218, 185, 0.5)),
+            url(/images/2B1A0277.jpg);
+    }
+
+    &.photo5 {
+        background-image: linear-gradient(45deg,
+                rgba(255, 218, 185, 0.5),
+                rgba(255, 218, 185, 0.5)),
+            url(/images/2B1A0517.jpg);
+    }
+
+    &.photo6 {
+        background-image: linear-gradient(45deg,
+                rgba(255, 218, 185, 0.5),
+                rgba(255, 218, 185, 0.5)),
+            url(/images/2B1A0529.jpg);
+    }
+
+    &.photo7 {
+        background-image: linear-gradient(45deg,
+                rgba(255, 218, 185, 0.5),
+                rgba(255, 218, 185, 0.5)),
+            url(/images/2B1A0532.jpg);
+    }
+
+    &.photo8 {
+        background-image: linear-gradient(45deg,
+                rgba(255, 218, 185, 0.5),
+                rgba(255, 218, 185, 0.5)),
+            url(/images/2B1A0593.jpg);
+    }
+
+    &.photo9 {
+        background-image: linear-gradient(45deg,
+                rgba(255, 218, 185, 0.5),
+                rgba(255, 218, 185, 0.5)),
+            url(/images/2B1A9128.jpg);
+    }
+
+    &.photo10 {
+        background-image: linear-gradient(45deg,
+                rgba(255, 218, 185, 0.5),
+                rgba(255, 218, 185, 0.5)),
+            url(/images/2B1A9167.jpg);
+    }
+
+}
