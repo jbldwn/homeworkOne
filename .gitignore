@@ -4,6 +4,7 @@ logs
 
 # Dependency directories
 node_modules/
+css/styles.css.map
 
 # Optional npm cache directory
 .npm
