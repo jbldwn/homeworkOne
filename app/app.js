@@ -3,28 +3,26 @@ const photos = document.getElementsByClassName("photo");
 const details = document.getElementsByClassName("detail");
 
 /* set hover event */
-function onHover(photoID, detailID){
+function onHover(photoID, detailID) {
 
     /* show hidden content */
     const detail = document.getElementById(detailID);
     detail.setAttribute("style", "visibility:visible;");
 
     /* REFRESH LISTENER */
-    
+
     const photo = document.getElementById(photoID);
     /* remove old listener */
     photo.removeEventListener("mouseover", onHover);
     /* add new listener */
-    photo.addEventListener("mouseout", (event)=>{
-         hideDetail(photoID, detailID);
+    photo.addEventListener("mouseout", () => {
+        hideDetail(photoID, detailID);
     });
 
-};
-
-
+}
 
 /* set hoverable photo details to hidden */
-function hideDetail(photoID, detailID){
+function hideDetail(photoID, detailID) {
 
     /* hide content again */
     const detail = document.getElementById(detailID);
@@ -47,11 +45,11 @@ for (let i = 0; i < details.length; i++) {
     photo.setAttribute('id', photoID)
 
     /* add event listener */
-    photo.addEventListener("mouseover", (event)=>{
+    photo.addEventListener("mouseover", (event) => {
         console.log("mouseOver listener executed");
-         onHover(photoID, detailID)
+        onHover(photoID, detailID)
     });
-    
+
     /* establishing hidden elements */
     hideDetail(photoID, detailID);
 
